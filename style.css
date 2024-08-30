@@ -33,11 +33,10 @@ html, main {
     }
 
     img {
-        height: 9vmax;
+        height: 7vmax;
         width: auto;
         mix-blend-mode: difference;
         border-radius: 50%;
-opacity = 0;
         position: absolute;
 
     }
