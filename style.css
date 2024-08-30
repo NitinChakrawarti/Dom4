@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html, main {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.elem {
+    height: 120px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    h1 {
+        font-size: 4vmax;
+        font-weight: 600;
+        padding-left: 1vmax;
+    }
+
+    img {
+        height: 9vmax;
+        width: auto;
+        mix-blend-mode: difference;
+        border-radius: 50%;
+
+        position: absolute;
+
+    }
+}

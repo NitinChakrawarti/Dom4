@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-4</title>
+    <link rel="shortcut icon" href="devoic.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <div class="elem">
+            <h1>Devoic</h1>
+            <img src="devoic.jpg" alt="">
+        </div>
+        <div class="elem">
+            <h1>E-cell</h1>
+            <img src="logo.png" alt="">
+
+        </div>
+        <div class="elem">
+            <h1>Gdsc</h1>
+            <img src="gdsc-social-share.png" alt="">
+
+        </div>
+        <div class="elem">
+            <h1>IEEE</h1>
+            <img src="download.png" alt="">
+        </div>
+    </div>
+
+
+    <script>
+        var elem = document.querySelectorAll(".elem");
+        elem.forEach(function (val) {
+            val.addEventListener("mouseenter", function () {
+                val.childNodes[3].style.opacity = 1;
+            });
+            val.addEventListener("mouseleave", function () {
+                val.childNodes[3].style.opacity = 0;
+            });
+            val.addEventListener("mousemove", function(det){
+val.childNodes[3].style.left= det.x +"px"
+            })
+        });
+    </script>
+</body>
+
+</html>
